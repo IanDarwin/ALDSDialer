@@ -1,0 +1,4 @@
+This uses a Broadcast Receiver to pick up outgoing phone calls and, if
+it is long distance AND you're in an area covered by your chosen
+ALDS (Alternate Long Distance Service), changes the number to
+(local ALDS) + ",," + (outgoing number).
