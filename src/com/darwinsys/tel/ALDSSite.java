@@ -3,8 +3,9 @@ package com.darwinsys.tel;
 /** In this version ALDSSite is an Enum, but in
  * future it could be a DAO, as long as we keep
  * the interface, e.g., ALDSSite.values().
- * Alternately the locations could be gleaned
- * from the Contacts database.
+ * Alternately the locations/numbers could come
+ * from the Contacts database, or be kept in a
+ * SQLite database.
  * @author Ian Darwin
  */
 public enum ALDSSite {
