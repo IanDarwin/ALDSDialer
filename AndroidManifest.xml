@@ -6,7 +6,7 @@
 	
 	<application android:icon="@drawable/icon" android:label="Outgoing Call Interceptor">
 	
-		<receiver android:name="OutgoingCallInterceptor">
+		<receiver android:name="ALDSRedirector">
 			<intent-filter android:priority="1">
 				<action android:name="android.intent.action.NEW_OUTGOING_CALL"></action>
 			</intent-filter>
