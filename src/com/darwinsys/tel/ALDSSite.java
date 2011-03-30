@@ -9,8 +9,8 @@ package com.darwinsys.tel;
  */
 public enum ALDSSite {
 	TORONTO("Toronto", 43.747,-79.466,"416-555-1212"),
-	OTTAWA("Ottawa", 56, 56, "613-555-1212");
-
+	OTTAWA("Ottawa", 45.424, -75.696, "613-555-1212");
+	
 	String locationName;
 	double lattitude, longitude;
 	String localNumber;
