@@ -9,9 +9,13 @@ public class ALDSRedirector extends BroadcastReceiver {
 	final static String DIAL_PAUSE = ",,";
     @Override
     public void onReceive(Context context, Intent intent) {
+    	if (!PrefsActivity.isEnabled(context)) {
+    		return;
+    	}
         final String oldNumber = intent.getStringExtra(Intent.EXTRA_PHONE_NUMBER);
         ALDSSite site = null;
         if ((site = findNearbySite()) == null) {
+        	Toast.makeText(context, "No ALDS in range", 1).show();
         	return;
         }
         String newNumber = site.getLocalNumber();
@@ -22,7 +26,7 @@ public class ALDSRedirector extends BroadcastReceiver {
     }
 
 	private ALDSSite findNearbySite() {
-		// Get rough site from GPS Tower Provider
+		// Get rough location from GPS Tower Provider
 		for (ALDSSite s : ALDSSite.values()) {
 			// geometry calculations needed
 		}
