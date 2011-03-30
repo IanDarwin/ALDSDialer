@@ -1,7 +1,6 @@
 package com.darwinsys.tel;
 
 import android.app.Activity;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.widget.TextView;
 
